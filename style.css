@@ -1,0 +1,234 @@
+body{
+    width: auto;
+}
+.head{
+  height: 50px;
+}
+
+.logo{
+  float: left;
+  margin: 8px 0px 0px 35px;
+  height: 40px;
+  width: 135px;
+}
+
+.nav{
+  font-family: sans-serif, serif;
+  float: right;
+  display: block;
+  padding: 15px 8px;
+  cursor: pointer;
+}
+#lang{
+  border: none;
+  outline: none;
+  color: black;
+  padding: 17px 16px 17px 16px;
+  background-color: inherit;
+  font-family: sans-serif, serif;
+  margin: 0;
+}
+.lang-down{
+    margin: 0px 0px 3px 15px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+#loc-btn{
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: sans-serif, serif;
+  cursor: pointer;
+}
+.loc-down{
+    margin: 0px 0px 2px 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+}
+
+.top-body{
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)), url("sofabackground.jpg");
+
+  width: 100%;
+  height: 600px;
+}
+
+.top-body-txt{
+  font-size: 20px;
+  font-family: Serif, sans-Serif, monospace;
+  text-shadow: 0px 0px 5px rgba(153, 150, 150, 1);
+  padding: 150px 0px 0px 80px;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+}
+
+.top-body-sub{
+  font-family: sans-serif, serif;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+}
+
+.dropdown-lang {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-lang a {
+    float: none;
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-lang a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+.dropdown-loc {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-loc a {
+    float: none;
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-loc a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.hotels{
+  background-color: #fceccc;
+  width: 70%;
+  height: 590px;
+  margin: 180px 65px 0px 145px;
+}
+
+.hotelsHead{
+  float: right;
+  margin: 20px 30px 0px 30px;
+  font-family: sans-serif, serif, monospace;
+}
+
+.hotelRoomA{
+  color: white;
+  float: left;
+  width: 45%;
+  height: 250px;
+  margin: 58px 0px 10px 20px;
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedrooma.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  font-family: sans-serif, serif, monospace;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+  line-height: 0;
+  font-size: 15px
+}
+
+.hotelRoomB{
+  color: white;
+  float: right;
+  width: 45%;
+  height: 250px;
+  margin: 10px 20px 10px 0px;
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroomb.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  font-family: sans-serif, serif, monospace;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+  line-height: 0;
+  font-size: 15px
+}
+
+.hotelRoomC{
+  color: white;
+  float: left;
+  width: 45%;
+  height: 250px;
+  margin: 10px 10px 10px 20px;
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroomc.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  font-family: sans-serif, serif, monospace;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+  line-height: 0;
+  font-size: 15px
+}
+
+.hotelRoomD{
+  color: white;
+  float: right;
+  width: 45%;
+  height: 120px;
+  margin: 10px 20px 0px 0px;
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroomd.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 120px;
+  font-family: sans-serif, serif, ,monospace;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+  line-height: 0;
+  font-size: 15px
+}
+
+.hotelRoomE{
+  color: white;
+  float: right;
+  width: 45%;
+  height: 120px;
+  margin: 10px 20px 0px 0px;
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroome.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 120px;
+  font-family: sans-serif, serif, ,monospace;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+  line-height: 0;
+  font-size: 15px
+}
+
+.hotel-room:hover{
+  cursor: pointer;
+}
+
+.hotel-btna, .hotel-btnb, .hotel-btnc, .hotel-btnd, .hotel-btne {
+  display: none;
+  font-size: 10px;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: sans-serif, serif;
+  cursor: pointer;
+}

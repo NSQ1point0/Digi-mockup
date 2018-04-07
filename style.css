@@ -1,24 +1,57 @@
 body{
-    width: auto;
-}
-.head{
-  height: 50px;
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
 }
 
-.logo{
-  float: left;
-  margin: 8px 0px 0px 35px;
+  /* Global */
+  .container{
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/* header */
+header{
+  background:white;
+  color:black;
+  min-height:70px;
+}
+
+header a{
+  color: black;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 10px 10px 0px 10px;
+}
+
+header .logo{
+  float:left;
+  margin: 5px 0px 0px 20px;
   height: 40px;
   width: 135px;
 }
 
-.nav{
-  font-family: sans-serif, serif;
-  float: right;
-  display: block;
-  padding: 15px 8px;
-  cursor: pointer;
+header nav{
+  float:right;
+  margin-top:10px;
 }
+
+header a:hover{
+  font-weight:bold;
+}
+
 #lang{
   border: none;
   outline: none;
@@ -28,6 +61,7 @@ body{
   font-family: sans-serif, serif;
   margin: 0;
 }
+
 .lang-down{
     margin: 0px 0px 3px 15px;
     border: solid black;
@@ -35,45 +69,6 @@ body{
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
-}
-
-#loc-btn{
-  border: 2px solid white;
-  outline: none;
-  color: white;
-  padding: 10px;
-  background-color: inherit;
-  font-family: sans-serif, serif;
-  cursor: pointer;
-}
-.loc-down{
-    margin: 0px 0px 2px 15px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 4px;
-    transform: rotate(45deg);
-}
-
-.top-body{
-  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)), url("sofabackground.jpg");
-
-  width: 100%;
-  height: 600px;
-}
-
-.top-body-txt{
-  font-size: 20px;
-  font-family: Serif, sans-Serif, monospace;
-  text-shadow: 0px 0px 5px rgba(153, 150, 150, 1);
-  padding: 150px 0px 0px 80px;
-  color: white;
-  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
-}
-
-.top-body-sub{
-  font-family: sans-serif, serif;
-  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
 }
 
 .dropdown-lang {
@@ -96,6 +91,43 @@ body{
 .dropdown-lang a:hover {
     color: black;
     background-color: #ddd;
+}
+
+/* section */
+
+.container section{
+  background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)), url("sofabackground.jpg");
+  width: 100%;
+  height: 600px;
+  font-size: 20px;
+  font-family: Serif, sans-Serif, monospace;
+  text-shadow: 0px 0px 5px rgba(153, 150, 150, 1);
+  padding: 150px 0px 0px 80px;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+}
+
+.container section .top-body-sub{
+  font-family: sans-serif, serif;
+  text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+}
+
+#loc-btn{
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: sans-serif, serif;
+  cursor: pointer;
+}
+.loc-down{
+    margin: 0px 0px 2px 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
 }
 
 .dropdown-loc {
@@ -124,11 +156,15 @@ body{
     display: block;
 }
 
-.hotels{
+/* article */
+
+article{
+  position: absolute;
   background-color: #fceccc;
-  width: 70%;
-  height: 590px;
-  margin: 180px 65px 0px 145px;
+  min-width: 70%;
+  min-height: 590px;
+  margin: -200px 180px 0px 145px;
+  overflow: hidden;
 }
 
 .hotelsHead{
@@ -140,9 +176,9 @@ body{
 .hotelRoomA{
   color: white;
   float: left;
-  width: 45%;
+  min-width: 45%;
   height: 250px;
-  margin: 58px 0px 10px 20px;
+  margin: 40px 0px 10px 20px;
   background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedrooma.jpg");
   background-repeat: no-repeat;
   background-size: 100% 250px;
@@ -158,7 +194,7 @@ body{
   float: right;
   width: 45%;
   height: 250px;
-  margin: 10px 20px 10px 0px;
+  margin: 7px 20px 20px 0px;
   background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroomb.jpg");
   background-repeat: no-repeat;
   background-size: 100% 250px;
@@ -174,7 +210,7 @@ body{
   float: left;
   width: 45%;
   height: 250px;
-  margin: 10px 10px 10px 20px;
+  margin: 10px 0px 0px 20px;
   background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroomc.jpg");
   background-repeat: no-repeat;
   background-size: 100% 250px;
@@ -190,7 +226,7 @@ body{
   float: right;
   width: 45%;
   height: 120px;
-  margin: 10px 20px 0px 0px;
+  margin: 0px 20px 10px 0px;
   background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroomd.jpg");
   background-repeat: no-repeat;
   background-size: 100% 120px;
@@ -206,7 +242,7 @@ body{
   float: right;
   width: 45%;
   height: 120px;
-  margin: 10px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
   background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)),url("bedroome.jpg");
   background-repeat: no-repeat;
   background-size: 100% 120px;
@@ -232,3 +268,34 @@ body{
   font-family: sans-serif, serif;
   cursor: pointer;
 }
+
+/* smart phone responsive setup */
+@media(max-width: 768px){
+  section,
+  header nav li, article{
+    float:none;
+    text-align:center;
+    width: 100%;
+  }
+
+  .top-body-sub,
+  .top-body-main, .dropdown-loc{
+    text-align: justify;
+  }
+
+  article{
+    position: none;
+    margin: 0;
+  }
+
+  .hotelsHead{
+    margin: 10px 30px 0px 0px;
+  }
+
+  .hotelRoomA, .hotelRoomB,
+  .hotelRoomC, .hotelRoomD, .hotelRoomE{
+    float: none;
+    margin: 10px 0px 0px 35px;
+    width: 85%;
+    overflow: hidden;
+  }

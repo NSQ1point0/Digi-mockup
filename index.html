@@ -4,21 +4,27 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="head">
-  <a href="#home"><image class="logo" src="subalogo.png"></a>
-  <a class="nav">Book now</a>
-  <button class="nav" id="lang" onclick="test()">EN<i class="lang-down"></i>
+  <header>
+  <div class="container">
+    <div class="logo">
+  <a href="#index.html"><image class="logo" src="subalogo.png"></a>
+   </div>
+   <nav>
+     <ul>
+      <li><a href="#book">Book now</a></li>
+      <li><a href="#lang" id="lang">EN<i class="lang-down"></i></a>
     <div class="dropdown-lang" id="dropdownLang">
       <a href="#">English</a>
       <a href="#">Arabic</a>
-    </div></button>
-  <a class="nav">check hotels</a>
+    </div></li>
+  <li><a href="#hotels">check hotels</a></li>
 </div>
 
-  <div class="top-body">
-<div class="top-body-txt">
+<div class="container">
+<section>
 <h1 class="top-body-main">Rest assured you found <br> the best rates</h1>
 <h4 class="top-body-sub">for all our hotels in <button class="loc-selector" id="loc-btn">all locations<i class="loc-down"></i>
   <div class="dropdown-loc" id="dropdownLoc">
@@ -27,11 +33,12 @@
   <a href="#">Mumbai</a>
   <a href="#">Dubai</a>
 </div></button> </h4>
-</div>
-<div class="hotels">
+</section>
+  <div class="container">
+    <article>
   <h2 class="hotelsHead">Some of our hotels<h2>
   <div class="hotelRoomA">
-    <h3>Suba International</h3>
+    <h3 class="testimg">Suba International</h3>
     <h5>International Airport, Mumbai</h5>
     <button class="hotel-btna">Learn More</button> <button class="hotel-btna">Book Room</button>
   </div>
@@ -55,8 +62,8 @@
   <h5>Junagadh, Gujarat</h5>
   <button class="hotel-btne">Learn More</button> <button class="hotel-btne">Book Room</button>
   </div>
+</article>
 </div>
-</div>
-<script src="index.js"></script>
+<script src="design.js"></script>
 </body>
 </html>

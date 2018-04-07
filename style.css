@@ -95,7 +95,7 @@ header a:hover{
 
 /* section */
 
-.container section{
+section{
   background: linear-gradient(rgba(109, 110, 112,0.5),rgba(109, 110, 112,0.5)), url("sofabackground.jpg");
   width: 100%;
   height: 600px;
@@ -281,6 +281,10 @@ article{
   .top-body-sub,
   .top-body-main, .dropdown-loc{
     text-align: justify;
+  }
+
+  section{
+    padding: 180px 0px 0px 30px; 
   }
 
   article{
